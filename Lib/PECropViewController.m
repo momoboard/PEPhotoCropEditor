@@ -100,7 +100,8 @@ static inline NSString *PELocalizedString(NSString *key, NSString *comment)
                                                                            action:@selector(constrain:)];
         self.toolbarItems = @[flexibleSpace, constrainButton, flexibleSpace];
     }
-    self.navigationController.toolbarHidden = self.toolbarHidden;
+
+    self.navigationController.toolbarHidden = YES;
     
     self.cropView.image = self.image;
     

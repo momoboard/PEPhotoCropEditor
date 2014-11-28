@@ -65,7 +65,8 @@
     PECropViewController *controller = [[PECropViewController alloc] init];
     controller.delegate = self;
     controller.image = self.imageView.image;
-    
+    controller.keepingCropAspectRatio = NO;
+    controller.toolbarHidden = YES;
     UIImage *image = self.imageView.image;
     CGFloat width = image.size.width;
     CGFloat height = image.size.height;
